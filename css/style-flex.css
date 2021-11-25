@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+body
+{
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+*
+{
+  font-family: 'PT Sans', sans-serif;
+}
+
+header, nav, main, aside, footer
+{
+  padding: 0.5rem;
+}
+
+
+header, footer
+{
+  flex: 1;
+  background-color: rgb(255, 191, 207);
+}
+
+
+.content
+{
+  display: flex;
+  flex: 4;
+}
+
+nav, aside
+{
+  flex: 1;
+  background-color: rgb(204, 204, 255);
+}
+
+main
+{
+  flex: 6;
+}
+
+.floating-image
+{
+  float: right;
+}
+
+
+@media screen and (max-width: 800px)
+{
+
+  .content
+  {
+    flex: 6;
+    flex-direction: column;
+  }
+
+  nav, aside
+  {
+    flex: 1;
+    width: auto;
+  }
+
+  main
+  {
+    flex: 4;
+  }
+
+}
